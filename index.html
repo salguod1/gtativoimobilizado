@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT - Ativo Imobilizado</title>
+    <style>
+        /* Estilos Gerais */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; /* Margin zerada para o header/footer ocupar toda a largura */
+            line-height: 1.6; 
+        }
+        
+        /* Container para aplicar margem lateral apenas no conteúdo */
+        .container {
+            padding: 0 20px;
+        }
+
+        header h1 {
+            background: #f2f2f2;
+            color: rgb(9, 9, 9);
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Layout Desktop (Telas > 768px) */
+        nav { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            background: #f2f2f2; 
+            padding: 10px; 
+            height: 100%; 
+            overflow-y: auto; 
+            width: 250px; 
+            border-right: 1px solid #ddd;
+            box-sizing: border-box; /* Garante que o padding não aumente a largura */
+        }
+        main { 
+            margin-left: 250px; /* Espaço para a nav */
+            padding: 20px; 
+        }
+
+        h2, h3 { color: #2a5d84; }
+        a { text-decoration: none; color: #0066cc; }
+        a:hover { text-decoration: underline; }
+        
+        pre { 
+            background: #f9f9f9; 
+            padding: 15px; 
+            border: 1px solid #ccc; 
+            white-space: pre-wrap;
+            font-size: 1.0rem; /* Ajuste no tamanho da fonte */
+            word-wrap: break-word; /* Garante a quebra de linha */
+        }
+
+        footer {
+            background: #f2f2f2;
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        
+        /* --- ESTILOS RESPONSIVOS PARA MOBILE --- */
+        /* Aplica estes estilos quando a tela for 768px ou menor */
+        @media (max-width: 768px) {
+            header h1 {
+                /* Esconde o H1 do header, pois o H2 do nav vai tomar seu lugar */
+                display: none;
+            }
+
+            nav {
+                position: static; /* Remove a fixação na lateral */
+                width: 100%;      /* Ocupa a largura total */
+                height: auto;     /* Altura se ajusta ao conteúdo */
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                background: #f2f2f2;
+            }
+
+            main {
+                margin-left: 0; /* Remove a margem da barra lateral */
+                padding: 15px;
+            }
+
+            nav h2 {
+                /* Transforma o "Índice" em um título principal no mobile */
+                background: #f2f2f2;
+                color: rgb(9, 9, 9);
+                padding: 5px 0;
+                margin: 0;
+                text-align: center;
+                font-size: 1.5rem; /* Tamanho similar ao H1 original */
+            }
+
+            pre {
+                font-size: 0.9rem; /* Diminui a fonte do código no mobile para caber melhor */
+            }
+        }
+    </style>
+</head>
+<body>
+  
+<nav>
+    <h2>GT - Ativo Imobilizado</h2>
+    <h3>Índice</h3>
+    <ul>
+        <li><a href="#introducao">Parte I - Introdução</a></li>
+        <li><a href="#gestao">Parte II - Gestão do Imobilizado</a></li>
+        <li><a href="#formularios">Formulários</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Header original movido para dentro do main para melhor fluxo no mobile -->
+    <header>
+      <h1>GT - Ativo Imobilizado</h1>
+    </header>
+
+    <section id="introducao">
+        <h2>Parte I - Introdução</h2>
+        <h3>Conceitos Contábeis</h3>
+        <ul>
+            <li>O Ativo Imobilizado é composto por bens duráveis <strong>utilizados por mais de um ano</strong>, como móveis, equipamentos e computadores. A principal dificuldade contábil reside em estabelecer uma distinção clara entre esses ativos, que devem ser contabilizados, e os bens considerados de pequeno valor. Essa diferenciação é crucial para o registro correto dos recursos da instituição e pode gerar debates internos sobre os critérios a serem adotados.</li>
+            <li>Para resolver essa questão, <strong>o critério adotado é a durabilidade do bem sob condições normais de uso</strong>. Se a expectativa de <strong>vida útil do item for SUPERIOR a um ano sem apresentar desgaste significativo</strong>, ele é <strong>registrado como Ativo Imobilizado</strong>. Caso contrário, se a <strong>deterioração ou o consumo ocorrer em MENOS de um ano</strong>, o <strong>bem é tratado como uma despesa do exercício fiscal corrente</strong>.</li>
+            <li>Existem diversos exemplos de bens com desgaste rápido que <strong>não são contabilizados</strong>, mas sim considerados despesas. Itens como ferramentas, utensílios de cozinha, equipamentos de proteção (EPIs) e materiais de escritório se enquadram nessa categoria. Da mesma forma, periféricos de informática, como teclados e mouses, ou peças de reposição, são classificados como bens de consumo de curta duração.</li>
+            <li><strong>FUNDAMENTOS ADMINISTRATIVOS</strong>: Comitê de Pronunciamentos Contábeis número 27 (CPC27); ECD Instrução Normativa RFB 1.420 de 1/12/2013; e Estatuto CCB.</li>
+        </ul>
+    </section>
+
+    <section id="gestao">
+        <h2>Parte II - Gestão do Imobilizado</h2>
+        <h3>OBJETIVO</h3>
+        <p>A GESTÃO DO IMOBILIZADO compreende:</p>
+        <ul>
+            <li>Procedimentos de <strong>entradas de bens e preenchimento de formulários</strong>;</li>
+            <li>Procedimentos de <strong>saídas de bens e preenchimento de formulários</strong>;</li>
+            <li>Procedimentos de <strong>controles e preenchimento de formulários</strong>.</li>
+        </ul>
+        <p>Além da <strong>obrigatoriedade legal</strong>, esse controle demonstra, em qualquer entidade, o grau de organização e transparência da entidade na gestão de seu patrimônio. Tal clareza corrobora na prestação de contas dos gestores e administradores responsáveis por tais ativos, visto que tem obrigação de salvaguardá-los, inclusive quanto à movimentação entre Casas de Oração.</p>
+
+        <h3>Entrada de Bens</h3>
+        <p>Possíveis motivos:</p>
+        <ul>
+            <li>Compra por nota fiscal (realizada pelo Departamento de Compras do Setor);</li>
+            <li>Transferência entre localidades;</li>
+            <li>Doação de membros.</li>
+        </ul>
+        <p>Documentação obrigatória:</p>
+        <ul>
+            <li>Formulário 14.1 – Declaração de doação</li>
+            <li>Formulário 14.2 – Ocorrência de entrada</li>
+            <li>Nota Fiscal (no caso de doação)</li>
+        </ul>
+        <p><strong>Obs.1</strong>: As compras feitas diretamente pelo Setor são registradas no sistema automaticamente, não sendo necessário confeccionar formulários.</p>
+        <p><strong>Obs.2</strong>: No caso de doações feitas por pessoas casadas, o formulário 14-1 deve, obrigatoriamente, conter também a assinatura do cônjuge.</p>
+
+        <h3>Saída de Bens</h3>
+        <p>Possíveis motivos:</p>
+        <ul>
+            <li>Transferência para outra localidade;</li>
+            <li>Venda com registro contábil;</li>
+            <li>Baixa por perda, obsolescência ou crime.</li>
+        </ul>
+        <p>Documentação obrigatória:</p>
+        <ul>
+            <li>Formulário 14.3 – Ocorrência de saída</li>
+            <li>Formulário 14.4 – Declaração de retirada</li>
+        </ul>
+        <h3>Procedimentos para manter a precisão dos registros</h3>
+        <pre>
+✔ Manter comunicação ativa com o Ministério e o responsável pela manutenção da Casa de Oração para identificar eventuais entradas e saídas de bens móveis
+
+✔ Providenciar os formulários, caso identificada a entrada e/ou saída de bens móveis, colhendo a assinatura do ministério (pelo menos dois irmãos)
+<strong>
+✔ Mensalmente, preencher o Formulário 14.8 - Movimento Mensal de Bens, colher assinatura do ministério e encaminhar para os coordenadores (as) de grupo do patrimônio até o dia 10 do mês subsequente (ex.: formulário de abril deve ser entregue até o dia 10 de maio). O formulário 14.8 é fundamental para monitorar a dinâmica dos ativos e identificar rapidamente divergências ou necessidades de ajustes nos controles internos.</strong>
+
+✔ Ficar atento aos avisos e solicitações no Grupo de WhatsApp do Patrimônio e/ou e-mails enviados.
+
+✔ Participar da reunião anual de orientações sobre atividades do patrimônio e de inventario anual.
+        </pre>
+        <h3>Inventário</h3>
+        <pre>
+Realizado uma vez por ano – <strong>orientações encaminhadas pelos coordenadores (as) de grupo do Patrimônio oportunamente.</strong>
+
+<strong>1. Planejamento e Agendamento:</strong>
+
+● Definição da Data: É fundamental <strong>agendar previamente a realização do inventário com o ministério responsável</strong>, informando a data para que todos os envolvidos possam se preparar. 
+
+● Preparação dos Materiais: Certifique-se de que se dispõem dos instrumentos necessários: planilha e ata de inventário.
+
+<strong>2. Procedimento de Contagem Física:</strong> 
+
+● Contagem em Dupla: A verificação é feita preferencialmente por duas pessoas — um que conta e outro que registra os dados. 
+
+● Os registros físicos devem ser confrontados com os dados da planilha disponibilizada.  
+
+● Se houver bens que não constam na relação ou se forem encontrados registros com informações divergentes (como localização ou quantidade), essas discrepâncias devem ser anotadas na planilha para posterior análise e correção. 
+
+● Bens não identificados na contagem física, mas registrados na planilha, devem ser verificados e, se comprovado que não estão mais presentes, baixados ou ajustados, por meio dos formulários apropriados, com assinatura do ministério da localidade (pelo menos 2).  
+
+● Bens que foram encontrados e não constavam na planilha devem ser incluídos nos registros por meio dos formulários apropriados, com assinatura do ministério da localidade (pelo menos 2).  
+
+● Após a verificação e a correção das divergências, o relatório do inventário (planilha) e a Ata de Inventário devem ser encaminhados para a administração, garantindo que todos os dados estejam atualizados e que eventuais ajustes sejam realizados conforme necessário.
+        </pre>
+    </section>
+
+    <section id="formularios">
+        <h2>Formulários</h2>
+        <h3>Formulário 14-1 – Declaração de Doação de Bem Móvel</h3>
+        <p><a href="formularios/F-14.1_Doação.docx" download>📥 Baixar Formulário (.docx)</a></p>
+        <h3>Formulário 14-2 – Ocorrência de Entrada de Bens Móveis</h3>
+        <p><a href="formularios/F-14.2_Entrada_Bens_Moveis.docx" download>📥 Baixar Formulário (.docx)</a></p>
+        <h3>Formulário 14-3 – Declaração de Saída de Bens Móveis</h3>
+        <p><a href="formularios/F-14.3_SaidaBensMóveis.docx" download>📥 Baixar Formulário (.docx)</a></p>
+        <h3>Formulário 14-4 – Declaração de Retirada de Bem</h3>
+        <p><a href="formularios/F-14.4_Declaração_Retirada_Bens.docx" download>📥 Baixar Formulário (.docx)</a></p>
+        <h3>Formulário 14-5 – Ata de Inventário de Bens Móveis</h3>
+        <p><a href="formularios/F-14.5-Ata_de_inventario_dos_bens_moveis.docx" download>📥 Baixar Formulário (.docx)</a></p>
+        <h3>Formulário 14-6 – Alteração de Cadastro de Bem</h3>
+        <p><a href="formularios/F-14.6_Alteração_Cadastro_Bem.docx" download>📥 Baixar Formulário (.docx)</a></p>
+        <h3>Formulário 14-7 – Movimentação Interna de Bens</h3>
+        <p><a href="formularios/F-14.7_Movimentação_Interna_Bens.docx" download>📥 Baixar Formulário (.docx)</a></p>
+        <h3>Formulário 14-8 – Movimentação Mensal de Bens</h3>
+        <p><a href="formularios/F-14.8_MovimentoMensalBens.docx" download>📥 Baixar Formulário (.docx)</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>⚠️ <strong>Este material é confidencial e de uso interno.</strong></p>
+</footer>
+
+</body>
+</html>
